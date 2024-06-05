@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { kumbhSans } from "./assets/fonts";
 
 export const metadata: Metadata = {
   title: "Fikri Albaihaqi",
@@ -13,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">{children}</body>
+      <body className={`${kumbhSans.className}`}>
+        <div className="w-screen h-screen bg-[url('/bg-noise.gif')] opacity-15 fixed">
+        </div>
+        {children}
+      </body>
     </html>
   );
 }
