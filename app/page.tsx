@@ -1,16 +1,16 @@
 import Image from "next/image";
-import { cormorantGaramond } from "./assets/fonts";
+import { cormorantGaramond, kumbhSans } from "./assets/fonts";
 
 
 export default function Home() {
   return (
     <>
-      <header className={`flex justify-center ${cormorantGaramond.className}`}>
-        <Image 
-          src="/self-portrait.png" 
-          alt="Fikri Albaihaqi Self Portrait" 
-          width={320} 
-          height={0} 
+      <header className={`h-screen flex justify-center ${cormorantGaramond.className}`}>
+        <Image
+          src="/self-portrait.png"
+          alt="Fikri Albaihaqi Self Portrait"
+          width={320}
+          height={0}
           className="absolute top-32 xl:top-56"
         />
         <h1 className="absolute top-8 xl:top-32 left-[30%] text-8xl font-semibold mix-blend-exclusion">
@@ -22,7 +22,11 @@ export default function Home() {
       </header>
 
       <main className="">
-
+        <section className={`h-screen flex justify-center items-center text-2xl text-center ${kumbhSans.className}`}>
+          Hello! I’m Fikri, a 22 years old front end web developer <br />
+          located in Bandung, Indonesia. I like to craft solid and <br />
+          beautiful website with great user experience.
+        </section>
       </main>
     </>
   );
