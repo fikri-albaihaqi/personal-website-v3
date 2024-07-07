@@ -11,12 +11,12 @@ export default function Home() {
           alt="Fikri Albaihaqi Self Portrait" 
           width={320} 
           height={0} 
-          className="absolute top-32"
+          className="absolute top-32 xl:top-56"
         />
-        <h1 className="absolute top-8 left-[30%] text-8xl font-semibold mix-blend-exclusion">
+        <h1 className="absolute top-8 xl:top-32 left-[30%] text-8xl font-semibold mix-blend-exclusion">
           Fikri <br /> Albaihaqi
         </h1>
-        <h1 className="absolute bottom-8 right-[30%] text-8xl font-semibold mix-blend-exclusion">
+        <h1 className="absolute bottom-8 xl:bottom-32 right-[30%] text-8xl font-semibold mix-blend-exclusion">
           Front end <br /> Developer
         </h1>
       </header>
