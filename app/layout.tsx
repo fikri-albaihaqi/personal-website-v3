@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${kumbhSans.className} text-ivory`}>
-        <div className="w-screen h-screen bg-[url('/bg-noise.gif')] opacity-30 fixed">
+        <div className="w-screen h-screen bg-[url('/bg-noise.gif')] opacity-10 fixed">
         </div>
         <Menu />
         {children}
