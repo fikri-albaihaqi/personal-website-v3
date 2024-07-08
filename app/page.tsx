@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { cormorantGaramond, kumbhSans } from "./assets/fonts";
+import { cormorantGaramond } from "./assets/fonts";
 import Skills from "./components/skills";
 
 export default function Home() {
@@ -22,19 +22,13 @@ export default function Home() {
       </header>
 
       <main className="">
-        <section className={`h-screen flex justify-center items-center text-2xl text-center ${kumbhSans.className}`}>
+        <section className={`h-screen flex justify-center items-center text-2xl text-center`}>
           Hello! I’m Fikri, a 22 years old front end web developer <br />
           located in Bandung, Indonesia. I like to craft solid and <br />
           beautiful website with great user experience.
         </section>
 
-        <section className="h-screen flex justify-center items-center overflow-hidden">
-          <Skills />
-        </section>
-
-        <section className="h-screen flex justify-center items-center">
-          
-        </section>
+        <Skills />
       </main>
     </>
   );

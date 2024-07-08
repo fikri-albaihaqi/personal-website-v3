@@ -24,11 +24,11 @@ const Skills = () => {
       defaults: { ease: "none" }
     })
 
-    tl.fromTo(spiralText.current, { scale: 5 }, { scale: 70 })
+    tl.fromTo(spiralText.current, { scale: 0.5 }, { scale: 15 })
   })
 
   return (
-    <div ref={section} className="h-screen flex justify-center items-center">
+    <div ref={section} className="flex justify-center items-center overflow-hidden">
       <svg ref={spiralText} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.41 482.73" className="w-1/2">
         <g className="fill-ivory">
           <g id="basic-language" className="animate-spin-slow origin-center">
