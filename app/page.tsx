@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { cormorantGaramond, kumbhSans } from "./assets/fonts";
-
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
@@ -26,6 +26,14 @@ export default function Home() {
           Hello! I’m Fikri, a 22 years old front end web developer <br />
           located in Bandung, Indonesia. I like to craft solid and <br />
           beautiful website with great user experience.
+        </section>
+
+        <section className="h-screen flex justify-center items-center overflow-hidden">
+          <Skills />
+        </section>
+
+        <section className="h-screen flex justify-center items-center">
+          
         </section>
       </main>
     </>

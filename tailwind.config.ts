@@ -15,6 +15,16 @@ const config: Config = {
       },
       colors: {
         "ivory": "#9E9C92"
+      },
+      animation: {
+        'spin-slow': 'spin 15s linear infinite',
+        'spin-reverse': 'spinreverse 15s linear infinite'
+      },
+      keyframes: {
+        spinreverse: {
+          'from': { transform: 'rotate(360deg)' },
+          'to': { transform: 'rotate(0deg)' },
+        }
       }
     },
   },
