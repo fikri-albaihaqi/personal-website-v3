@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { cormorantGaramond } from "./assets/fonts";
 import Skills from "./components/skills";
+import Project from "./components/project";
 
 export default function Home() {
   return (
@@ -29,6 +30,12 @@ export default function Home() {
         </section>
 
         <Skills />
+
+        <section>
+          <h1 className={`${cormorantGaramond.className} text-[15rem] font-semibold text-center`}>WORKS</h1>
+
+          <Project />
+        </section>
       </main>
     </>
   );
