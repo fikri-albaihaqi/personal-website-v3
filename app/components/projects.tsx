@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 
-const Project = () => {
+const Projects = () => {
   const projects = [
     {
       id: 1,
@@ -32,7 +32,7 @@ const Project = () => {
       {projects.map((project: any) => (
         project.id % 2 !== 0 ? (
           <div className="self-start my-32 ml-16" key={project.id}>
-            <Image src={project.image} alt="Project Image" width={800} height={600} />
+            <Image src={project.image} alt="Project Image" width={640} height={600} />
             <div className="flex items-center justify-between">
               <div className="self-start">
                 <h1 className="font-bold text-3xl uppercase mt-4">{project.name}</h1>
@@ -47,7 +47,7 @@ const Project = () => {
           </div>
         ) : (
           <div className="self-end my-32 mr-16" key={project.id}>
-            <Image src={project.image} alt="Project Image" width={800} height={600} />
+            <Image src={project.image} alt="Project Image" width={640} height={600} />
             <div className="flex items-center justify-between">
               <div className="self-start">
                 <h1 className="font-bold text-3xl uppercase mt-4">{project.name}</h1>
@@ -66,4 +66,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Projects
