@@ -18,13 +18,19 @@ const config: Config = {
       },
       animation: {
         'spin-slow': 'spin 15s linear infinite',
-        'spin-reverse': 'spinreverse 15s linear infinite'
+        'spin-medium': 'spin 8s linear infinite',
+        'spin-reverse': 'spinreverse 15s linear infinite',
+        'marquee': 'marquee 20s linear infinite',
       },
       keyframes: {
         spinreverse: {
           'from': { transform: 'rotate(360deg)' },
           'to': { transform: 'rotate(0deg)' },
-        }
+        },
+        marquee: {
+          'from': { transform: 'translateX(0)' },
+          'to': { transform: 'translateX(calc(-100% - 1rem))' }
+        },
       }
     },
   },

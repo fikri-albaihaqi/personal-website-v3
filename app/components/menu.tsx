@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Menu() {
   return(
-    <nav className="fixed right-16 mt-8 flex text-ivory text-lg">
+    <nav className="fixed z-50 right-16 mt-8 flex text-ivory text-lg">
       <ul className="mr-8">
         <Link href="/" className="hover:text-white">
           <li>About</li>
