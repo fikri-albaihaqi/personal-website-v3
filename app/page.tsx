@@ -57,7 +57,7 @@ export default function Home() {
           If you’d like me to join your team, please reach me out!
         </section>
 
-        <div className="fixed bottom-0 w-screen h-screen">
+        <div className="fixed bottom-0 -z-50 w-screen h-screen">
           <Image
             src={image}
             alt="Social Background Image"
