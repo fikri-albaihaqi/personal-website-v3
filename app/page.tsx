@@ -34,16 +34,18 @@ export default function Home() {
         </h1>
       </header>
 
-      <main className="">
-        <section className="h-screen flex justify-center items-center text-2xl text-center">
+      <main>
+        <section id="about" className="h-screen flex justify-center items-center text-2xl text-center">
           Hello! I’m Fikri, a 22 years old front end web developer <br />
           located in Bandung, Indonesia. I like to craft solid and <br />
           beautiful website with great user experience.
         </section>
 
-        <Skills />
+        <section id="skills">
+          <Skills />
+        </section>
 
-        <section className="h-max">
+        <section id="works" className="h-max">
           <h1 className={`${cormorantGaramond.className} sticky top-56 -z-10 text-8xl lg:text-[15rem] font-semibold text-center`}>
             WORKS
           </h1>
@@ -57,7 +59,7 @@ export default function Home() {
           If you’d like me to join your team, please reach me out!
         </section>
 
-        <div className="fixed bottom-0 -z-50 w-screen h-screen">
+        <div id="contact" className="fixed bottom-0 -z-50 w-screen h-screen">
           <Image
             src={image}
             alt="Social Background Image"

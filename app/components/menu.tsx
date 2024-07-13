@@ -4,16 +4,16 @@ export default function Menu() {
   return(
     <nav className="fixed z-50 right-16 mt-8 flex text-ivory text-lg">
       <ul className="mr-8">
-        <Link href="/" className="hover:text-white">
+        <Link href="#about" className="hover:text-white">
           <li>About</li>
         </Link>
-        <Link href="/" className="hover:text-white">
+        <Link href="#skills" className="hover:text-white">
           <li>Skills</li>
         </Link>
-        <Link href="/" className="hover:text-white">
+        <Link href="#works" className="hover:text-white">
           <li>Works</li>
         </Link>
-        <Link href="/" className="hover:text-white">
+        <Link href="#contact" className="hover:text-white">
           <li>Contact</li>
         </Link>
       </ul>

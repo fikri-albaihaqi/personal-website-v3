@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${kumbhSans.className} text-ivory`}>
         <div className="w-screen h-screen bg-[url('/bg-noise.gif')] opacity-10 fixed -z-50">
         </div>
