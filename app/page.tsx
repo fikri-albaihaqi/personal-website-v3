@@ -8,7 +8,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [image, setImage] = useState<string>("")
+  const [image, setImage] = useState<string>("/dummy.png")
 
   const handleMouseEnter = (imageSource: string) => {
     return () => {
