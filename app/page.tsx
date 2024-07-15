@@ -74,16 +74,16 @@ export default function Home() {
 
           <ul className={`${cormorantGaramond.className} text-9xl font-semibold`}>
             <Link href="mailto:fikrialbaihaqi@gmail.com" target='_blank' onMouseEnter={handleMouseEnter("/email.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")} >
-              <li className="my-8">Email</li>
+              <li className="my-8 hover:text-white transition-all duration-200">Email</li>
             </Link>
             <Link href="https://www.linkedin.com/in/fikri-albaihaqi/" target='_blank' onMouseEnter={handleMouseEnter("/linkedin.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-              <li className="my-8">LinkedIn</li>
+              <li className="my-8 hover:text-white transition-all duration-200">LinkedIn</li>
             </Link>
             <Link href="https://github.com/fikri-albaihaqi" target='_blank' onMouseEnter={handleMouseEnter("/github.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-              <li className="my-8">Github</li>
+              <li className="my-8 hover:text-white transition-all duration-200">Github</li>
             </Link>
             <Link href="https://codepen.io/Fikri-Code" target='_blank' onMouseEnter={handleMouseEnter("/codepen.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-              <li className="my-8">Codepen</li>
+              <li className="my-8 hover:text-white transition-all duration-200">Codepen</li>
             </Link>
           </ul>
         </section>
