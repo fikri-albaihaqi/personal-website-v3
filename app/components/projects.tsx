@@ -44,7 +44,8 @@ const Projects = () => {
             height={0}
           />
           <div 
-            className="absolute flex items-end select-none bottom-[92px] gap-4 bg-[#EDCA85] w-[720px] max-w-full h-0 group-hover:h-[540px] transition-all duration-500 overflow-hidden"
+            className="absolute flex items-end select-none bottom-[92px] gap-4 bg-yellow-canary w-[720px] max-w-full h-0 group-hover:h-[540px] transition-all duration-500 
+            overflow-hidden"
           >
             <div
               className="flex shrink-0 justify-around min-w-full bottom-0 gap-4 text-[15rem] leading-none font-bold opacity-0 group-hover:opacity-100 transition-all duration-500
