@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { kumbhSans } from "./assets/fonts";
 import Menu from "./components/menu";
+import Contact from "./components/contact";
 
 export const metadata: Metadata = {
   title: "Fikri Albaihaqi",
@@ -20,6 +21,7 @@ export default function RootLayout({
         </div>
         <Menu />
         {children}
+        <Contact />
       </body>
     </html>
   );
