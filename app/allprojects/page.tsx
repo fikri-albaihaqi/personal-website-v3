@@ -5,7 +5,7 @@ import Project from "../components/project"
 const AllProjects = () => {
   return (
     <main>
-      <h1 className={`${cormorantGaramond.className} text-8xl font-semibold ml-16 pt-8`}>
+      <h1 className={`${cormorantGaramond.className} text-8xl font-semibold ml-16 pt-32`}>
         All <br /> 
         Works
       </h1>
