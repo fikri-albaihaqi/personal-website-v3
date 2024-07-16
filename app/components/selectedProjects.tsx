@@ -12,7 +12,7 @@ const SelectedProjects = () => {
     <div ref={projectsWrapper} className="flex flex-col">
       <CursorFollower el={projectsWrapper} />
       {projects.map((project: any) => (
-        <Project project={project} key={project.id} />
+        <Project project={project} key={project.id} classes="even:self-start odd:self-end my-32 even:ml-16 odd:mr-16" />
       ))}
     </div>
   )

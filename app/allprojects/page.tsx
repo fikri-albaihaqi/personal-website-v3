@@ -7,12 +7,12 @@ const AllProjects = () => {
     <main>
       <h1 className={`${cormorantGaramond.className} text-8xl font-semibold ml-16 pt-8`}>
         All <br /> 
-        Projects
+        Works
       </h1>
 
-      <section>
+      <section className="relative grid grid-cols-2 gap-y-16 mx-16 my-32">
         {projects.map((project: any) => (
-          <Project project={project} key={project.id} />
+          <Project project={project} key={project.id} classes="mx-4 odd:place-self-start even:place-self-end" />
         ))}
       </section>
     </main>

@@ -35,8 +35,8 @@ export default function Home() {
         </section>
 
         <section id="works" className="relative h-max flex flex-col">
-          <h1 className={`${cormorantGaramond.className} sticky top-56 mb-32 -z-10 text-8xl lg:text-9xl font-semibold text-center`}>
-            SELECTED PROJECTS
+          <h1 className={`${cormorantGaramond.className} sticky top-56 mb-32 -z-10 text-8xl lg:text-[12rem] font-semibold text-center`}>
+            WORKS
           </h1>
 
           <SelectedProjects />

@@ -1,40 +1,59 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
+import { useEffect, useRef, useState } from "react"
 
-const Project = (props: any) => {
+const Project = ({
+  project,
+  classes
+}: {
+  project: any,
+  classes?: string
+}) => {
+  const imageRef = useRef<any>()
+  const [imageHeight, setImageHeight] = useState()
+
+  useEffect(() => {
+    setImageHeight(imageRef.current?.clientHeight)
+  }, [imageRef.current?.clientHeight])
+
+  console.log(imageHeight)
+
   return (
-    <Link href="/" className="relative even:self-start odd:self-end my-32 even:ml-16 odd:mr-16 group" key={props.project.id}>
+    <Link href="/" className={`relative group ${classes} w-max`} key={project.id}>
       <Image
-        src={props.project.image}
+        src={project.image}
         alt="Project Image"
         width={720}
         height={0}
+        ref={imageRef}
       />
       <div
-        className="absolute flex items-end select-none bottom-[92px] gap-4 bg-yellow-canary w-[720px] max-w-full h-0 group-hover:h-[540px] transition-all duration-500 
-            overflow-hidden"
+        className={`absolute flex items-end select-none top-0 gap-4 bg-yellow-canary w-[720px] max-w-full h-0 group-hover:h-[${imageRef.current?.clientHeight}px] transition-all 
+          duration-500 overflow-hidden`}
       >
         <div
           className="flex shrink-0 justify-around min-w-full bottom-0 gap-4 text-[15rem] leading-none font-bold opacity-0 group-hover:opacity-100 transition-all duration-500
-                text-neutral-900 uppercase animate-marquee whitespace-nowrap"
+          text-neutral-900 uppercase animate-marquee whitespace-nowrap"
         >
           <span>
-            &nbsp; {props.project.name}
+            &nbsp; {project.name}
           </span>
           <span>
-            &nbsp; {props.project.name}
+            &nbsp; {project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
         </div>
         <div
@@ -43,22 +62,22 @@ const Project = (props: any) => {
           aria-hidden="true"
         >
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp;{props.project.name}
+            &nbsp;{project.name}
           </span>
           <span>
-            &nbsp; {props.project.name}
+            &nbsp; {project.name}
           </span>
         </div>
       </div>
@@ -68,12 +87,12 @@ const Project = (props: any) => {
             className="relative font-bold text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
                     before:h-[2px] before:left-0 before:block before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full"
           >
-            {props.project.name}
+            {project.name}
           </h1>
-          <h2 className="mt-4 mix-blend-difference">{props.project.year}</h2>
+          <h2 className="mt-4 mix-blend-difference">{project.year}</h2>
         </div>
         <div className="flex flex-wrap w-[200px] justify-end">
-          {props.project.techStack.map((tech: any, index: number) =>
+          {project.techStack.map((tech: any, index: number) =>
             <p className="mix-blend-difference" key={index}>{tech} &nbsp;</p>
           )}
         </div>
