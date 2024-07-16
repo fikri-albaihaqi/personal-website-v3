@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { cormorantGaramond } from "./assets/fonts";
 import Skills from "./components/skills";
-import Projects from "./components/projects";
-import Contact from "./components/contact";
+import SelectedProjects from "./components/selectedProjects";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -34,12 +34,21 @@ export default function Home() {
           <Skills />
         </section>
 
-        <section id="works" className="h-max">
-          <h1 className={`${cormorantGaramond.className} sticky top-56 -z-10 text-8xl lg:text-[15rem] font-semibold text-center`}>
-            WORKS
+        <section id="works" className="relative h-max flex flex-col">
+          <h1 className={`${cormorantGaramond.className} sticky top-56 mb-32 -z-10 text-8xl lg:text-9xl font-semibold text-center`}>
+            SELECTED PROJECTS
           </h1>
 
-          <Projects />
+          <SelectedProjects />
+
+          <Link 
+            href="/allprojects" 
+            className="absolute bottom-0 self-center text-3xl mt-32 text-center no-underline hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-[3px]
+              before:h-[4px] before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]" 
+            >
+            See all my projects
+          </Link>
         </section>
 
         <section className="h-screen flex justify-center items-center text-2xl text-center">
@@ -47,8 +56,6 @@ export default function Home() {
           and looking for a full-time remote position. <br />
           If you’d like me to join your team, please reach me out!
         </section>
-
-        <Contact />
       </main>
     </>
   );
