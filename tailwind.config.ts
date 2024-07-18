@@ -21,7 +21,7 @@ const config: Config = {
         'spin-slow': 'spin 15s linear infinite',
         'spin-medium': 'spin 8s linear infinite',
         'spin-reverse': 'spinreverse 15s linear infinite',
-        'marquee': 'marquee 20s linear infinite',
+        'marquee': 'marquee 30s linear infinite',
       },
       keyframes: {
         spinreverse: {

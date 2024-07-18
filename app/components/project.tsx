@@ -11,13 +11,6 @@ const Project = ({
   project: any,
   classes?: string
 }) => {
-  const imageRef = useRef<any>()
-  const [imageHeight, setImageHeight] = useState()
-
-  useEffect(() => {
-    setImageHeight(imageRef.current?.clientHeight)
-  }, [imageRef.current?.clientHeight])
-
   return (
     <Link href="/" className={`relative group ${classes} w-max`} key={project.id}>
       <Image
@@ -25,12 +18,11 @@ const Project = ({
         alt="Project Image"
         width={720}
         height={0}
-        ref={imageRef}
         className="w-[360px] xl:w-[720px]"
       />
       <div
-        className={`absolute flex items-end select-none top-0 gap-4 bg-yellow-canary w-[720px] max-w-full h-0 group-hover:h-[${imageRef.current?.clientHeight}px] transition-all 
-          duration-500 overflow-hidden`}
+        className={`absolute flex items-end select-none top-0 gap-4 bg-yellow-canary w-[360px] xl:w-[720px] max-w-full h-0 group-hover:h-[270px] lg:group-hover:h-[540px] 
+          transition-all duration-500 overflow-hidden`}
       >
         <div
           className="flex shrink-0 justify-around min-w-full bottom-0 gap-4 text-[15rem] leading-none font-bold opacity-0 group-hover:opacity-100 transition-all duration-500
