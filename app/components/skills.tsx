@@ -16,20 +16,21 @@ const Skills = () => {
       scrollTrigger: {
         trigger: section.current,
         start: "center center",
-        end: () => "+=" + window.innerHeight,
-        scrub: 5,
+        end: `+=${section.current?.clientHeight * 1.3}`,
+        scrub: 0.5,
         pin: true,
-        anticipatePin: 1,
       },
       defaults: { ease: "none" }
     })
 
-    tl.fromTo(spiralText.current, { scale: 0.5 }, { scale: 15 })
+    tl.to(spiralText.current, { stagger: 0.25, scale: 20, opacity: 0, ease: "Power4.easeOut" })
+    // tl.to(spiralText.current, { stagger: 0.25, scale: 20, opacity: 0, ease: "Power4.easeOut" })
+    // tl.to(spiralText.current, { opacity: 0, ease: "Power4.easeOut" })
   })
 
   return (
-    <div ref={section} className="flex justify-center items-center overflow-hidden">
-      <svg ref={spiralText} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.41 482.73" className="w-1/2">
+    <div ref={section} className="max-h-screen flex justify-center items-center overflow-x-clip">
+      <svg ref={spiralText} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 485.41 482.73" className="w-1/4">
         <g className="fill-ivory">
           <g id="basic-language" className="animate-spin-slow origin-center">
             <path

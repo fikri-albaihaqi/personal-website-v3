@@ -9,10 +9,10 @@ const SelectedProjects = () => {
   const projectsWrapper = useRef<any>()
 
   return (
-    <div ref={projectsWrapper} className="flex flex-col">
+    <div ref={projectsWrapper} className="flex flex-col items-center">
       <CursorFollower el={projectsWrapper} />
       {projects.map((project: any) => (
-        <Project project={project} key={project.id} classes="even:self-start odd:self-end my-32 even:ml-16 odd:mr-16" />
+        <Project project={project} key={project.id} classes="md:even:self-start md:odd:self-end my-32 md:even:ml-16 md:odd:mr-16" />
       ))}
     </div>
   )

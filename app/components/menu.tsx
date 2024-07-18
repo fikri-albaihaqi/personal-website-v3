@@ -7,7 +7,7 @@ export default function Menu() {
   const path = usePathname()
 
   return (
-    <nav className="fixed w-screen flex justify-between z-50 mt-8 px-16 text-ivory text-lg">
+    <nav className="fixed w-screen flex justify-between z-50 mt-8 px-8 lg:px-16 text-ivory text-lg">
       <Link href="/" className="font-semibold text-4xl">
         FA
       </Link>

@@ -18,8 +18,6 @@ const Project = ({
     setImageHeight(imageRef.current?.clientHeight)
   }, [imageRef.current?.clientHeight])
 
-  console.log(imageHeight)
-
   return (
     <Link href="/" className={`relative group ${classes} w-max`} key={project.id}>
       <Image
@@ -28,6 +26,7 @@ const Project = ({
         width={720}
         height={0}
         ref={imageRef}
+        className="w-[360px] xl:w-[720px]"
       />
       <div
         className={`absolute flex items-end select-none top-0 gap-4 bg-yellow-canary w-[720px] max-w-full h-0 group-hover:h-[${imageRef.current?.clientHeight}px] transition-all 
@@ -84,7 +83,7 @@ const Project = ({
       <div className="flex items-center justify-between">
         <div className="relative self-start">
           <h1
-            className="relative font-bold text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
+            className="relative font-bold text-xl xl:text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
                     before:h-[2px] before:left-0 before:block before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full"
           >
             {project.name}

@@ -27,7 +27,7 @@ const Contact = () => {
       <section className="relative h-screen flex flex-col justify-center items-center text-center">
         <h1 className="mb-24 text-3xl">Social</h1>
 
-        <ul className={`${cormorantGaramond.className} text-9xl font-semibold`}>
+        <ul className={`${cormorantGaramond.className} text-6xl md:text-9xl font-semibold`}>
           <Link href="mailto:fikrialbaihaqi@gmail.com" target='_blank' onMouseEnter={handleMouseEnter("/email.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")} >
             <li className="my-8 hover:text-white transition-all duration-200">Email</li>
           </Link>
