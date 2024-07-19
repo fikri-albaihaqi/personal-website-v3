@@ -2,12 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 export default function Menu() {
   const path = usePathname()
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
-    <nav className="fixed w-screen flex justify-between z-50 mt-8 px-8 lg:px-16 text-ivory text-lg mix-blend-difference">
+    <nav 
+      className="fixed w-screen flex justify-between z-50 mt-8 px-8 lg:px-16 text-ivory text-lg mix-blend-difference"
+      data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500"  
+    >
       <Link href="/" className="font-semibold text-4xl">
         FA
       </Link>

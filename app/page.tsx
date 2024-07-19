@@ -1,10 +1,19 @@
+'use client'
+
 import Image from "next/image";
 import { cormorantGaramond } from "./assets/fonts";
 import Skills from "./components/skills";
 import SelectedProjects from "./components/selectedProjects";
 import Link from "next/link";
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+  
   return (
     <>
       <header className={`h-screen flex justify-center ${cormorantGaramond.className}`}>
@@ -14,11 +23,13 @@ export default function Home() {
           width={320}
           height={0}
           className="absolute top-56 md:top-1/3 lg:top-32 min-[1920px]:top-56"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
         />
-        <h1 className="absolute hidden md:block top-8 min-[1920px]:top-32 left-[30%] text-8xl font-semibold mix-blend-exclusion">
+        <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" className="absolute hidden md:block top-8 min-[1920px]:top-32 left-[30%] text-8xl font-semibold mix-blend-exclusion">
           Fikri <br /> Albaihaqi
         </h1>
-        <h1 className="absolute hidden md:block bottom-8 min-[1920px]:bottom-32 right-[30%] text-8xl font-semibold mix-blend-exclusion">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" className="absolute hidden md:block bottom-8 min-[1920px]:bottom-32 right-[30%] text-8xl font-semibold mix-blend-exclusion">
           Front end <br /> Developer
         </h1>
 
@@ -44,9 +55,13 @@ export default function Home() {
         </section>
 
         <section id="works" className="relative h-max flex flex-col">
-          <h1 className={`${cormorantGaramond.className} sticky top-56 mb-32 -z-10 text-8xl lg:text-[12rem] font-semibold text-center`}>
-            WORKS
-          </h1>
+          <div className={`${cormorantGaramond.className} sticky flex justify-center top-56 mb-32 -z-10 text-8xl lg:text-[12rem] font-semibold text-center`}>
+            <h1 data-aos="fade-up">W</h1>
+            <h1 data-aos="fade-up" data-aos-delay="100">O</h1>
+            <h1 data-aos="fade-up" data-aos-delay="200">R</h1>
+            <h1 data-aos="fade-up" data-aos-delay="300">K</h1>
+            <h1 data-aos="fade-up" data-aos-delay="400">S</h1>
+          </div>
 
           <SelectedProjects />
 

@@ -1,9 +1,11 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { cormorantGaramond } from "../assets/fonts"
 import Link from "next/link"
 import Image from "next/image"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 const Contact = () => {
   const [image, setImage] = useState<string>("/dummy.png")
@@ -13,6 +15,10 @@ const Contact = () => {
       setImage(imageSource)
     }
   }
+
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <div id="contact" className="fixed bottom-0 -z-50 w-screen h-screen">
@@ -29,16 +35,16 @@ const Contact = () => {
 
         <ul className={`${cormorantGaramond.className} text-6xl md:text-9xl font-semibold`}>
           <Link href="mailto:fikrialbaihaqi@gmail.com" target='_blank' onMouseEnter={handleMouseEnter("/email.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")} >
-            <li className="my-8 hover:text-white transition-all duration-200">Email</li>
+            <li data-aos="fade-up" className="my-8 hover:text-white transition-all duration-200">Email</li>
           </Link>
           <Link href="https://www.linkedin.com/in/fikri-albaihaqi/" target='_blank' onMouseEnter={handleMouseEnter("/linkedin.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-            <li className="my-8 hover:text-white transition-all duration-200">LinkedIn</li>
+            <li data-aos="fade-up" data-aos-delay="100" className="my-8 hover:text-white transition-all duration-200">LinkedIn</li>
           </Link>
           <Link href="https://github.com/fikri-albaihaqi" target='_blank' onMouseEnter={handleMouseEnter("/github.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-            <li className="my-8 hover:text-white transition-all duration-200">Github</li>
+            <li data-aos="fade-up" data-aos-delay="200" className="my-8 hover:text-white transition-all duration-200">Github</li>
           </Link>
           <Link href="https://codepen.io/Fikri-Code" target='_blank' onMouseEnter={handleMouseEnter("/codepen.jpg")} onMouseLeave={handleMouseEnter("/dummy.png")}>
-            <li className="my-8 hover:text-white transition-all duration-200">Codepen</li>
+            <li data-aos="fade-up" data-aos-delay="300" className="my-8 hover:text-white transition-all duration-200">Codepen</li>
           </Link>
         </ul>
       </section>
