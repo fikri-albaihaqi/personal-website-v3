@@ -56,11 +56,11 @@ export default function Home() {
 
         <section id="works" className="relative h-max flex flex-col">
           <div className={`${cormorantGaramond.className} sticky flex justify-center top-56 mb-32 -z-10 text-8xl lg:text-[12rem] font-semibold text-center`}>
-            <h1 data-aos="fade-up">W</h1>
-            <h1 data-aos="fade-up" data-aos-delay="100">O</h1>
-            <h1 data-aos="fade-up" data-aos-delay="200">R</h1>
-            <h1 data-aos="fade-up" data-aos-delay="300">K</h1>
-            <h1 data-aos="fade-up" data-aos-delay="400">S</h1>
+            <h1 data-aos="fade-up" data-aos-delay="300">W</h1>
+            <h1 data-aos="fade-up" data-aos-delay="400">O</h1>
+            <h1 data-aos="fade-up" data-aos-delay="500">R</h1>
+            <h1 data-aos="fade-up" data-aos-delay="600">K</h1>
+            <h1 data-aos="fade-up" data-aos-delay="700">S</h1>
           </div>
 
           <SelectedProjects />
