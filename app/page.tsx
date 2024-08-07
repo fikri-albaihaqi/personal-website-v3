@@ -13,7 +13,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init()
   }, [])
-  
+
   return (
     <>
       <header className={`h-screen flex justify-center ${cormorantGaramond.className}`}>
@@ -75,10 +75,21 @@ export default function Home() {
           </Link>
         </section>
 
-        <section className="h-screen flex justify-center items-center mx-16 md:mx-0 text-xl md:text-2xl text-center">
-          I&apos;m currently available <br />
-          and looking for a full-time remote position. <br />
-          If you’d like me to join your team, please reach me out!
+        <section className="relative h-screen flex justify-center items-center mx-16 md:mx-0 text-xl md:text-2xl text-center">
+          <div>
+            I&apos;m currently available <br />
+            and looking for a full-time remote position. <br />
+            If you’d like me to join your team, please reach me out!
+          </div>
+
+          <Link
+            href="/Resume_Fikri.pdf" target='_blank'
+            className="absolute self-center text-xl mt-64 text-center no-underline hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-[3px]
+              before:h-[4px] before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
+          >
+            My Resume
+          </Link>
         </section>
       </main>
     </>

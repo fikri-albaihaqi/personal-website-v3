@@ -43,6 +43,9 @@ export default function Menu() {
           <Link href="/allprojects" className="hover:text-white transition-all duration-500">
             <li>All Works</li>
           </Link>
+          <Link href="/Resume_Fikri.pdf" target='_blank' className="hover:text-white transition-all duration-500">
+            <li>My Resume</li>
+          </Link>
         </ul>
       </div>
     </nav>
