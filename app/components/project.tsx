@@ -12,7 +12,7 @@ const Project = ({
   classes?: string
 }) => {
   return (
-    <Link href="/" className={`relative group ${classes} w-max`} key={project.id}>
+    <Link href={project.link} target='_blank' className={`relative group ${classes} w-max`} key={project.id}>
       <Image
         src={project.image}
         alt="Project Image"
