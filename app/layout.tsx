@@ -7,6 +7,9 @@ import Contact from "./components/contact";
 export const metadata: Metadata = {
   title: "Fikri Albaihaqi",
   description: "Front-end Developer",
+  icons: {
+    icon: "/favicon.png",
+  }
 };
 
 export default function RootLayout({
