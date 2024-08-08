@@ -6,7 +6,7 @@ import Contact from "./components/contact";
 
 export const metadata: Metadata = {
   title: "Fikri Albaihaqi",
-  description: "Front-end Developer",
+  description: "A 22 years old front end web developer located in Bandung, Indonesia.I like to craft solid and beautiful website with great user experience.",
   icons: {
     icon: "/favicon.png",
   }
