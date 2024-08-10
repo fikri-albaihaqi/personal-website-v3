@@ -18,10 +18,10 @@ export default function Menu() {
       className="fixed w-screen flex justify-between z-50 mt-8 px-8 lg:px-16 text-ivory text-lg mix-blend-difference"
       data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1500"  
     >
-      <Link href="/" className="font-semibold text-4xl">
+      <Link href="/" className="font-semibold text-xl md:text-4xl">
         FA
       </Link>
-      <div className="flex">
+      <div className="flex text-sm md:text-base">
         <ul className="mr-8">
           <Link href={path === '/allprojects' ? '/#about' : '#about'} className="hover:text-white transition-all duration-500">
             <li>About</li>
