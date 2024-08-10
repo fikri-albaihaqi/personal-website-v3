@@ -22,7 +22,7 @@ export default function Home() {
           alt="Fikri Albaihaqi Self Portrait"
           width={320}
           height={0}
-          className="absolute top-56 md:top-1/3 lg:top-32 min-[1920px]:top-56"
+          className="absolute self-center md:top-1/3 lg:top-32 min-[1920px]:top-56"
           data-aos="zoom-in"
           data-aos-duration="1000"
         />
@@ -33,14 +33,11 @@ export default function Home() {
           Front end <br /> Developer
         </h1>
 
-        <div className="md:hidden h-screen flex justify-center items-center">
-          <h1 className="text-8xl text-center font-semibold mix-blend-exclusion">
-            Fikri Albaihaqi
-            <br />
-            <br />
-            Front end Developer
-          </h1>
-        </div>
+        <h1 className="md:hidden h-screen flex justify-center items-center text-6xl text-center font-semibold mix-blend-exclusion">
+          <span data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" className="absolute top-32">Fikri Albaihaqi</span>
+          <br />
+          <span data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" className="absolute bottom-[10%]">Front end Developer</span>
+        </h1>
       </header>
 
       <main>
