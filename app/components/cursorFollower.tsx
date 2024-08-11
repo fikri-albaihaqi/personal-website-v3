@@ -33,8 +33,13 @@ const CursorFollower = (props: any) => {
 
     let animation = gsap.timeline({ paused: true })
 
-    animation.to(
+    animation.fromTo(
       cursorFollower.current,
+      {
+        scale: 0,
+        opacity: 0,
+        duration: 0.3
+      },
       {
         scale: 1,
         opacity: 100,
@@ -42,26 +47,22 @@ const CursorFollower = (props: any) => {
       },
     )
     let targets = gsap.utils.toArray(props.el.current?.children)
-    console.log("targets: ", targets)
+    console.log("jalan")
 
     targets.forEach((target: any) => {
       target.addEventListener("mouseenter", () => {
         animation.play()
-        console.log("jalan")
       })
 
       target.addEventListener("mouseleave", () => {
         animation.reverse()
-        console.log("stop")
       })
     })
   })
 
-  console.log(props.el.current)
-
 
   return (
-    <div ref={cursorFollower} className="fixed left-0 top-0 z-50 flex items-center justify-center opacity-0 pointer-events-none">
+    <div ref={cursorFollower} className="fixed left-0 top-0 z-50 flex items-center justify-center pointer-events-none">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 703 703" className="w-1/2">
         <g id="cursor-follower" className="animate-spin-medium origin-center">
           <circle id="circle-bg" cx="351.5" cy="351.5" r="286" className="fill-none stroke-white stroke-[130px]" />
