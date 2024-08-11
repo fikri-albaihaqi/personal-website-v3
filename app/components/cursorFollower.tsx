@@ -46,13 +46,17 @@ const CursorFollower = (props: any) => {
     targets.forEach((target: any) => {
       target.addEventListener("mouseenter", () => {
         animation.play()
+        console.log("jalan")
       })
 
       target.addEventListener("mouseleave", () => {
         animation.reverse()
+        console.log("stop")
       })
     })
   })
+
+  console.log(props.el.current)
 
 
   return (
