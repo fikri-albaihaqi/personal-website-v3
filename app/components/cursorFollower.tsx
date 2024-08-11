@@ -1,9 +1,10 @@
 import { gsap } from "gsap"
 import { useGSAP } from "@gsap/react"
-import { useRef } from "react"
+import { useRef, useState } from "react"
 
 const CursorFollower = (props: any) => {
   const cursorFollower = useRef<any>()
+  const [animation] = useState(gsap.timeline({ paused: true }))
 
   useGSAP(() => {
     gsap.set(cursorFollower.current, { xPercent: -50, yPercent: -50, scale: 0, opacity: 0 })
@@ -30,8 +31,6 @@ const CursorFollower = (props: any) => {
       x(e.clientX)
       y(e.clientY)
     })
-
-    let animation = gsap.timeline({ paused: true })
 
     animation.fromTo(
       cursorFollower.current,
