@@ -42,6 +42,7 @@ const CursorFollower = (props: any) => {
       },
     )
     let targets = gsap.utils.toArray(props.el.current?.children)
+    console.log("targets: ", targets)
 
     targets.forEach((target: any) => {
       target.addEventListener("mouseenter", () => {
