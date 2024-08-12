@@ -1,6 +1,6 @@
 import { forwardRef } from "react"
 
-const CursorFollower = forwardRef(function CursorFollower(props, ref) {
+const CursorFollower = forwardRef<any>(function CursorFollower(props, ref) {
 
   return (
     <div ref={ref} className="fixed left-0 top-0 z-50 flex items-center justify-center pointer-events-none opacity-0">
