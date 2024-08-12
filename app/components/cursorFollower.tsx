@@ -1,67 +1,9 @@
-import { gsap } from "gsap"
-import { useGSAP } from "@gsap/react"
-import { useRef, useState } from "react"
+import { forwardRef } from "react"
 
-const CursorFollower = (props: any) => {
-  const cursorFollower = useRef<any>()
-  const [animation] = useState(gsap.timeline({ paused: true }))
-
-  useGSAP(() => {
-    gsap.set(cursorFollower.current, { xPercent: -50, yPercent: -50, scale: 0, opacity: 0 })
-
-    let x = gsap.quickTo(
-      cursorFollower.current,
-      'x',
-      {
-        duration: 0.6,
-        ease: 'back',
-      }
-    )
-
-    let y = gsap.quickTo(
-      cursorFollower.current,
-      'y',
-      {
-        duration: 0.6,
-        ease: 'back',
-      }
-    )
-
-    window.addEventListener("mousemove", (e) => {
-      x(e.clientX)
-      y(e.clientY)
-    })
-
-    animation.fromTo(
-      cursorFollower.current,
-      {
-        scale: 0,
-        opacity: 0,
-        duration: 0.3
-      },
-      {
-        scale: 1,
-        opacity: 100,
-        duration: 0.3
-      },
-    )
-    let targets = gsap.utils.toArray(props.el.current?.children)
-    console.log("jalan")
-
-    targets.forEach((target: any) => {
-      target.addEventListener("mouseenter", () => {
-        animation.play()
-      })
-
-      target.addEventListener("mouseleave", () => {
-        animation.reverse()
-      })
-    })
-  })
-
+const CursorFollower = forwardRef(function CursorFollower(props, ref) {
 
   return (
-    <div ref={cursorFollower} className="fixed left-0 top-0 z-50 flex items-center justify-center pointer-events-none">
+    <div ref={ref} className="fixed left-0 top-0 z-50 flex items-center justify-center pointer-events-none opacity-0">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 703 703" className="w-1/2">
         <g id="cursor-follower" className="animate-spin-medium origin-center">
           <circle id="circle-bg" cx="351.5" cy="351.5" r="286" className="fill-none stroke-white stroke-[130px]" />
@@ -75,6 +17,6 @@ const CursorFollower = (props: any) => {
       </svg>
     </div>
   )
-}
+})
 
 export default CursorFollower
