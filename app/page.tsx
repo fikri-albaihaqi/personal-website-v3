@@ -47,7 +47,7 @@ export default function Home() {
           beautiful website with great user experience.
         </section>
 
-        <section id="skills">
+        <section id="skills" className="py-96 xl:py-64">
           <Skills />
         </section>
 
