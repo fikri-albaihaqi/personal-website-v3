@@ -17,7 +17,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Twiceland",
+    name: "Twiceworld",
     year: "2024",
     techStack: ["Next.js", "Tailwind CSS", "Firebase"],
     image: "/twiceland.png",
@@ -33,6 +33,22 @@ const projects = [
   },
   {
     id: 5,
+    name: "Celestara",
+    year: "2025",
+    techStack: ["Next.js", "Tailwind CSS", "GSAP", "Three.js"],
+    image: "/celestara.png",
+    link: "https://celestarafest.netlify.app/"
+  },
+  {
+    id: 6,
+    name: "Komplek",
+    year: "2025",
+    techStack: ["React.js", "Tailwind CSS"],
+    image: "/komplek.png",
+    link: "https://komplek.netlify.app/"
+  },
+  {
+    id: 7,
     name: "This is Indonesia",
     year: "2022",
     techStack: ["React.js", "Tailwind CSS"],
@@ -40,7 +56,7 @@ const projects = [
     link: "https://thisisindonesia.netlify.app/"
   },
   {
-    id: 6,
+    id: 8,
     name: "Personal Website V2",
     year: "2022",
     techStack: ["React.js", "Styled Components", "Three.js"],
@@ -48,7 +64,7 @@ const projects = [
     link: "https://fikrialbaihaqi.netlify.app/"
   },
   {
-    id: 7,
+    id: 9,
     name: "Whats the weather at?",
     year: "2022",
     techStack: ["Vue.js", "Tailwind CSS", "OpenWeatherMap API"],
@@ -56,7 +72,7 @@ const projects = [
     link: "https://whatstheweatherat.netlify.app/"
   },
   {
-    id: 8,
+    id: 10,
     name: "Newsthetic",
     year: "2022",
     techStack: ["React.js", "Tailwind CSS", "News API"],
@@ -64,7 +80,7 @@ const projects = [
     link: "https://github.com/fikri-albaihaqi/newsthetic"
   },
   {
-    id: 9,
+    id: 11,
     name: "Jaya Tirta",
     year: "2022",
     techStack: ["Flutter", "Python", "Fast API", "Firebase"],
