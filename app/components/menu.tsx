@@ -26,9 +26,6 @@ export default function Menu() {
           <Link href={path === '/allprojects' ? '/#about' : '#about'} className="hover:text-white transition-all duration-500">
             <li>About</li>
           </Link>
-          <Link href={path === '/allprojects' ? '/#skills' : '#skills'} className="hover:text-white transition-all duration-500">
-            <li>Skills</li>
-          </Link>
           <Link href={path === '/allprojects' ? '/#works' : '#works'} className="hover:text-white transition-all duration-500">
             <li>Works</li>
           </Link>
