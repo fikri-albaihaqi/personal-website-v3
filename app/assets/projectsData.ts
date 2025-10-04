@@ -17,11 +17,11 @@ const projects = [
   },
   {
     id: 3,
-    name: 'Gedung Sate Interactive Map',
-    year: '2024',
-    techStack: ['Three.js', 'CSS'],
-    image: '/gedung-sate.png',
-    link: 'https://gedung-sate.netlify.app/',
+    name: 'Komplek',
+    year: '2025',
+    techStack: ['React.js', 'Tailwind CSS'],
+    image: '/komplek.png',
+    link: 'https://komplek.netlify.app/',
   },
   {
     id: 4,
@@ -49,11 +49,11 @@ const projects = [
   },
   {
     id: 7,
-    name: 'Komplek',
-    year: '2025',
-    techStack: ['React.js', 'Tailwind CSS'],
-    image: '/komplek.png',
-    link: 'https://komplek.netlify.app/',
+    name: 'Gedung Sate Interactive Map',
+    year: '2024',
+    techStack: ['Three.js', 'CSS'],
+    image: '/gedung-sate.png',
+    link: 'https://gedung-sate.netlify.app/',
   },
   {
     id: 8,
