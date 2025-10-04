@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import { cormorantGaramond } from './assets/fonts'
-import Skills from './components/skills'
 import SelectedProjects from './components/selectedProjects'
 import Link from 'next/link'
 import AOS from 'aos'
@@ -77,10 +76,6 @@ export default function Home() {
           Hello! I’m Fikri, a 22 years old front end web developer <br />
           located in Bandung, Indonesia. I like to craft solid and <br />
           beautiful website with great user experience.
-        </section>
-
-        <section id="skills" className="py-96 xl:py-64">
-          <Skills />
         </section>
 
         <section id="works" className="relative h-max flex flex-col">
