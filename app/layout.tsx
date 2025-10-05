@@ -21,6 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="xRokpyLwNnjNgzDTWKghHMsdkERiejuVldjITFoiX7w"
+        />
+      </head>
       <ReactLenis root>
         <body className={`${kumbhSans.className} text-ivory`}>
           <div className="w-screen h-screen bg-[url('/bg-noise.gif')] opacity-10 fixed -z-50"></div>
