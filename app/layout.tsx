@@ -8,10 +8,7 @@ import { ReactLenis } from './utils/lenis'
 export const metadata: Metadata = {
   title: 'Fikri Albaihaqi',
   description:
-    'A 22 years old front end web developer located in Bandung, Indonesia.I like to craft solid and beautiful website with great user experience.',
-  icons: {
-    icon: '/favicon.png',
-  },
+    "Hello! I'm Fikri, a 24 years old passionate Frontend Web Developer who like to build a pixel-perfect and beautiful websites.",
 }
 
 export default function RootLayout({
@@ -22,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        <meta name="apple-mobile-web-app-title" content="Fikri Albaihaqi" />
         <meta
           name="google-site-verification"
           content="xRokpyLwNnjNgzDTWKghHMsdkERiejuVldjITFoiX7w"
