@@ -26,6 +26,7 @@ export default function Home() {
           alt="Fikri Albaihaqi Self Portrait"
           width={320}
           height={0}
+          priority={true}
           className="absolute self-center md:top-1/3 lg:top-32 min-[1920px]:top-56"
           data-aos="zoom-in"
           data-aos-duration="1000"
