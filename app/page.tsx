@@ -74,11 +74,11 @@ export default function Home() {
           className="h-screen flex justify-center items-center mx-16 md:mx-0 text-xl md:text-2xl text-center"
         >
           <p className="w-full md:w-2/3 xl:w-1/3">
-            Hello! I’m Fikri, a 24 years old passionate Frontend Web Developer
-            who like to build a pixel-perfect and beautiful websites. I'm always
-            stay updated with the latest technologies and trends in the
-            industry. I am dedicated to delivering high-quality solutions that
-            meet and exceed client expectations.
+            Hello! I&apos;m Fikri, a 24 years old passionate Frontend Web
+            Developer who like to build a pixel-perfect and beautiful websites.
+            I&apos;m always stay updated with the latest technologies and trends
+            in the industry. I am dedicated to delivering high-quality solutions
+            that meet and exceed client expectations.
           </p>
         </section>
 
@@ -117,9 +117,9 @@ export default function Home() {
 
         <section className="relative h-screen flex justify-center items-center mx-16 md:mx-0 text-xl md:text-2xl text-center">
           <p className="w-full md:w-2/3 xl:w-1/3">
-            I'm available for new projects and full-time remote opportunities.
-            If you’re looking for someone to help bring your next website to
-            life, let’s get in touch!
+            I&apos;m available for new projects and full-time remote
+            opportunities. If you&apos;re looking for someone to help bring your
+            next website to life, let&apos;s get in touch!
           </p>
 
           <Link
