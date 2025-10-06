@@ -67,9 +67,8 @@ export default function Menu() {
               href="/allprojects"
               className="hover:text-white transition-all duration-500"
             >
-              All
+              All Works
             </Link>
-            Works
           </li>
 
           <li>
@@ -78,9 +77,8 @@ export default function Menu() {
               target="_blank"
               className="hover:text-white transition-all duration-500"
             >
-              My
+              My Resume
             </Link>
-            Resume
           </li>
         </ul>
       </div>
