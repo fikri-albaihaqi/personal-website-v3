@@ -23,64 +23,52 @@ export default function Menu() {
       <Link href="/" className="font-semibold text-xl md:text-4xl">
         FA
       </Link>
-      <div className="flex text-sm md:text-base">
-        <ul className="mr-8">
-          <li>
-            <Link
-              href={path === '/allprojects' ? '/#about' : '#about'}
-              className="hover:text-white transition-all duration-500"
-            >
-              About
-            </Link>
-          </li>
+      <div className="flex gap-x-8 text-sm md:text-base">
+        <div className="flex flex-col gap-y-1">
+          <Link
+            href={path === '/allprojects' ? '/#about' : '#about'}
+            className="hover:text-white transition-all duration-500"
+          >
+            About
+          </Link>
 
-          <li>
-            <Link
-              href={path === '/allprojects' ? '/#works' : '#works'}
-              className="hover:text-white transition-all duration-500"
-            >
-              Works
-            </Link>
-          </li>
+          <Link
+            href={path === '/allprojects' ? '/#works' : '#works'}
+            className="hover:text-white transition-all duration-500"
+          >
+            Works
+          </Link>
 
-          <li>
-            <Link
-              href={path === '/allprojects' ? '/#contact' : '#contact'}
-              className="hover:text-white transition-all duration-500"
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <Link
-              href="/"
-              className="hover:text-white transition-all duration-500"
-            >
-              Home
-            </Link>
-          </li>
+          <Link
+            href={path === '/allprojects' ? '/#contact' : '#contact'}
+            className="hover:text-white transition-all duration-500"
+          >
+            Contact
+          </Link>
+        </div>
+        <div className="flex flex-col gap-y-1">
+          <Link
+            href="/"
+            className="hover:text-white transition-all duration-500"
+          >
+            Home
+          </Link>
 
-          <li>
-            <Link
-              href="/allprojects"
-              className="hover:text-white transition-all duration-500"
-            >
-              All Works
-            </Link>
-          </li>
+          <Link
+            href="/allprojects"
+            className="hover:text-white transition-all duration-500"
+          >
+            All Works
+          </Link>
 
-          <li>
-            <Link
-              href="/Resume_Fikri.pdf"
-              target="_blank"
-              className="hover:text-white transition-all duration-500"
-            >
-              My Resume
-            </Link>
-          </li>
-        </ul>
+          <Link
+            href="/Resume_Fikri.pdf"
+            target="_blank"
+            className="hover:text-white transition-all duration-500"
+          >
+            My Resume
+          </Link>
+        </div>
       </div>
     </nav>
   )
