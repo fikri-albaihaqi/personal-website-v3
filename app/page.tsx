@@ -27,7 +27,7 @@ export default function Home() {
           width={320}
           height={0}
           priority={true}
-          className="absolute self-center md:top-1/3 lg:top-32 min-[1920px]:top-56"
+          className="absolute self-center md:top-1/3 lg:top-32 min-[1920px]:top-56 min-[2560px]:top-1/3"
           data-aos="zoom-in"
           data-aos-duration="1000"
         />
@@ -35,7 +35,7 @@ export default function Home() {
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="1000"
-          className="absolute hidden md:block top-8 min-[1920px]:top-32 left-[30%] text-8xl font-semibold mix-blend-exclusion"
+          className="absolute hidden md:block top-8 min-[1920px]:top-32 min-[2560px]:top-64  left-[30%] text-8xl font-semibold mix-blend-exclusion"
         >
           Fikri <br /> Albaihaqi
         </h1>
@@ -43,7 +43,7 @@ export default function Home() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="1000"
-          className="absolute hidden md:block bottom-8 min-[1920px]:bottom-32 right-[30%] text-8xl font-semibold mix-blend-exclusion"
+          className="absolute hidden md:block bottom-8 min-[1920px]:bottom-32 min-[2560px]:bottom-1/4 right-[30%] text-8xl font-semibold mix-blend-exclusion"
         >
           Frontend <br /> Developer
         </h1>
