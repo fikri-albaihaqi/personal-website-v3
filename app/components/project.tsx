@@ -11,13 +11,13 @@ const Project = ({
   classes?: string
 }) => {
   return (
-    <Link href={project.link} target='_blank' className={`relative group ${classes} w-max`} key={project.id}>
+    <Link href={project.link} target='_blank' className={`relative group ${classes} w-full lg:w-max`} key={project.id}>
       <Image
         src={project.image}
         alt="Project Image"
         width={720}
         height={0}
-        className="w-[360px] xl:w-[720px]"
+        className="w-full 2xl:w-[720px]"
       />
       <div
         className={`absolute flex items-end select-none top-0 gap-4 bg-yellow-canary w-[360px] xl:w-[720px] max-w-full h-0 group-hover:h-[270px] lg:group-hover:h-[540px] 
@@ -74,7 +74,13 @@ const Project = ({
       <div className="flex items-center justify-between">
         <div className="relative self-start">
           <h1
-            className="relative font-bold text-xl xl:text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
+            className="hidden lg:block 2xl:hidden relative font-bold 2xl:text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
+                    before:h-[2px] before:left-0 before:block before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full"
+          >
+            {project.name.slice(0, 20)}
+          </h1>
+          <h1
+            className="block lg:hidden 2xl:block relative font-bold 2xl:text-3xl uppercase mt-4 mix-blend-difference before:bg-ivory before:content-[''] before:w-0 before:absolute before:-bottom-2
                     before:h-[2px] before:left-0 before:block before:transition-all before:duration-500 before:-z-10 group-hover:before:w-full"
           >
             {project.name}
