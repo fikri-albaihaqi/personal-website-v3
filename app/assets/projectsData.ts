@@ -1,14 +1,22 @@
 const projects = [
   {
     id: 1,
+    name: 'Jaya Imperial Park',
+    year: '2026',
+    techStack: ['Next.js', 'GSAP', 'Tailwind CSS', 'Ant Design'],
+    image: '/jip.png',
+    link: 'https://jayaimperialpark.com/en',
+  },
+  {
+    id: 2,
     name: 'Stellar Brand Design',
     year: '2025',
-    techStack: ['Next.js', 'GSAP', 'Sanity', 'Matter.js'],
+    techStack: ['Next.js', 'GSAP', 'Tailwind CSS', 'Sanity', 'Matter.js'],
     image: '/sbd.png',
     link: 'https://www.stellarbranddesign.com/',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Polatify',
     year: '2022',
     techStack: ['Vue.js', 'Express', 'Tailwind CSS', 'Spotify API'],
@@ -16,7 +24,7 @@ const projects = [
     link: 'https://polatify.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     name: 'Komplek',
     year: '2025',
     techStack: ['React.js', 'Tailwind CSS'],
@@ -24,7 +32,7 @@ const projects = [
     link: 'https://komplek.netlify.app/',
   },
   {
-    id: 4,
+    id: 5,
     name: 'Twice World',
     year: '2024',
     techStack: ['Next.js', 'Tailwind CSS', 'Firebase'],
@@ -32,7 +40,7 @@ const projects = [
     link: 'https://twice-world.netlify.app/',
   },
   {
-    id: 5,
+    id: 6,
     name: 'Cinefo',
     year: '2022',
     techStack: ['Vue.js', 'Tailwind CSS', 'The Movie Database API'],
@@ -40,7 +48,7 @@ const projects = [
     link: 'https://cinefo.netlify.app/',
   },
   {
-    id: 6,
+    id: 7,
     name: 'Celestara',
     year: '2025',
     techStack: ['Next.js', 'Tailwind CSS', 'GSAP', 'Three.js'],
@@ -48,7 +56,7 @@ const projects = [
     link: 'https://celestarafest.netlify.app/',
   },
   {
-    id: 7,
+    id: 8,
     name: 'Gedung Sate Interactive Map',
     year: '2024',
     techStack: ['Three.js', 'CSS'],
@@ -56,7 +64,7 @@ const projects = [
     link: 'https://gedung-sate.netlify.app/',
   },
   {
-    id: 8,
+    id: 9,
     name: 'This is Indonesia',
     year: '2022',
     techStack: ['React.js', 'Tailwind CSS'],
@@ -64,7 +72,7 @@ const projects = [
     link: 'https://thisisindonesia.netlify.app/',
   },
   {
-    id: 9,
+    id: 10,
     name: 'Personal Website V2',
     year: '2022',
     techStack: ['React.js', 'Styled Components', 'Three.js'],
@@ -72,7 +80,7 @@ const projects = [
     link: 'https://fikrialbaihaqi.netlify.app/',
   },
   {
-    id: 10,
+    id: 11,
     name: 'Whats the weather at?',
     year: '2022',
     techStack: ['Vue.js', 'Tailwind CSS', 'OpenWeatherMap API'],
@@ -80,7 +88,7 @@ const projects = [
     link: 'https://whatstheweatherat.netlify.app/',
   },
   {
-    id: 11,
+    id: 12,
     name: 'Newsthetic',
     year: '2022',
     techStack: ['React.js', 'Tailwind CSS', 'News API'],
@@ -88,7 +96,7 @@ const projects = [
     link: 'https://github.com/fikri-albaihaqi/newsthetic',
   },
   {
-    id: 12,
+    id: 13,
     name: 'Jaya Tirta',
     year: '2022',
     techStack: ['Flutter', 'Python', 'Fast API', 'Firebase'],
