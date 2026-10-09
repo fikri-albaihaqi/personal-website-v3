@@ -75,7 +75,7 @@ export default function Home() {
           className="h-screen flex justify-center items-center mx-16 md:mx-0 text-xl md:text-2xl text-center"
         >
           <p className="w-full md:w-2/3 xl:w-1/3">
-            Hello! I&apos;m Fikri, a 24 years old passionate Frontend Web
+            Hello! I&apos;m Fikri, a 25 years old passionate Frontend Web
             Developer who like to build a pixel-perfect and beautiful websites.
             I&apos;m always stay updated with the latest technologies and trends
             in the industry. I am dedicated to delivering high-quality solutions
