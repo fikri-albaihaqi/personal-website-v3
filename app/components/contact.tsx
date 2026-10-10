@@ -1,119 +1,86 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { cormorantGaramond } from '../assets/fonts'
 import Link from 'next/link'
-import Image from 'next/image'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const Contact = () => {
-  const [image, setImage] = useState<string>('/dummy.png')
-
-  const handleMouseEnter = (imageSource: string) => {
-    return () => {
-      setImage(imageSource)
-    }
-  }
-
   useEffect(() => {
     AOS.init()
   }, [])
   return (
-    <>
-      <div id="contact" className="fixed bottom-0 -z-50 w-screen h-screen">
-        <Image
-          src={image}
-          alt="Social Background Image"
-          fill={true}
-          className={`overflow-hidden object-cover transition-all duration-500 ${
-            image === '/dummy.png' ? 'opacity-0' : 'opacity-15'
-          }`}
-        />
-      </div>
+    <section
+      id="contact"
+      className="relative h-screen flex flex-col justify-center items-center my-32 text-center"
+    >
+      <h1 className="mb-8 text-3xl">Social</h1>
 
-      <section className="relative h-screen flex flex-col justify-center items-center my-32 text-center">
-        <h1 className="mb-8 text-3xl">Social</h1>
-
-        <ul
-          className={`${cormorantGaramond.className} text-6xl md:text-9xl font-semibold`}
-        >
-          <li
-            data-aos="fade-up"
-            className="my-8 hover:text-white transition-all duration-200"
+      <ul
+        className={`${cormorantGaramond.className} text-6xl md:text-9xl font-semibold`}
+      >
+        <li data-aos="fade-up" className="my-8">
+          <Link
+            href="mailto:fikrialbaihaqi@gmail.com"
+            target="_blank"
+            className="relative transition-all duration-200 hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-0 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
-            <Link
-              href="mailto:fikrialbaihaqi@gmail.com"
-              target="_blank"
-              onMouseEnter={handleMouseEnter('/email.jpg')}
-              onMouseLeave={handleMouseEnter('/dummy.png')}
-            >
-              Email
-            </Link>
-          </li>
+            Email
+          </Link>
+        </li>
 
-          <li
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="my-8 hover:text-white transition-all duration-200"
+        <li data-aos="fade-up" data-aos-delay="300" className="my-8">
+          <Link
+            href="https://www.upwork.com/freelancers/~015e023b78f14b9f07"
+            target="_blank"
+            className="relative transition-all duration-200 hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-0 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
-            <Link
-              href="https://www.upwork.com/freelancers/~015e023b78f14b9f07"
-              target="_blank"
-              onMouseEnter={handleMouseEnter('/upwork.png')}
-              onMouseLeave={handleMouseEnter('/dummy.png')}
-            >
-              Upwork
-            </Link>
-          </li>
+            Upwork
+          </Link>
+        </li>
 
-          <li
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="my-8 hover:text-white transition-all duration-200"
+        <li data-aos="fade-up" data-aos-delay="100" className="my-8">
+          <Link
+            href="https://www.linkedin.com/in/fikri-albaihaqi/"
+            target="_blank"
+            className="relative transition-all duration-200 hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-0 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
-            <Link
-              href="https://www.linkedin.com/in/fikri-albaihaqi/"
-              target="_blank"
-              onMouseEnter={handleMouseEnter('/linkedin.jpg')}
-              onMouseLeave={handleMouseEnter('/dummy.png')}
-            >
-              LinkedIn
-            </Link>
-          </li>
+            LinkedIn
+          </Link>
+        </li>
 
-          <li
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="my-8 hover:text-white transition-all duration-200"
+        <li data-aos="fade-up" data-aos-delay="200" className="my-8">
+          <Link
+            href="https://github.com/fikri-albaihaqi"
+            target="_blank"
+            className="relative transition-all duration-200 hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-0 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
-            <Link
-              href="https://github.com/fikri-albaihaqi"
-              target="_blank"
-              onMouseEnter={handleMouseEnter('/github.jpg')}
-              onMouseLeave={handleMouseEnter('/dummy.png')}
-            >
-              Github
-            </Link>
-          </li>
+            Github
+          </Link>
+        </li>
 
-          <li
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="my-8 hover:text-white transition-all duration-200"
+        <li data-aos="fade-up" data-aos-delay="300" className="my-8">
+          <Link
+            href="https://codepen.io/Fikri-Code"
+            target="_blank"
+            className="relative transition-all duration-200 hover:text-neutral-900
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-0 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
-            <Link
-              href="https://codepen.io/Fikri-Code"
-              target="_blank"
-              onMouseEnter={handleMouseEnter('/codepen.jpg')}
-              onMouseLeave={handleMouseEnter('/dummy.png')}
-            >
-              Codepen
-            </Link>
-          </li>
-        </ul>
-      </section>
-    </>
+            Codepen
+          </Link>
+        </li>
+      </ul>
+    </section>
   )
 }
 
