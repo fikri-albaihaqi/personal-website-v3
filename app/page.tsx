@@ -26,7 +26,7 @@ export default function Home() {
           alt="Fikri Albaihaqi Self Portrait"
           width={320}
           height={0}
-          priority={true}
+          preload={true}
           className="absolute self-center"
           data-aos="zoom-in"
           data-aos-duration="1000"
@@ -109,8 +109,8 @@ export default function Home() {
           <Link
             href="/allprojects"
             className="absolute bottom-0 self-center text-3xl mt-32 text-center no-underline hover:text-neutral-900
-              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-[3px]
-              before:h-[4px] before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-1 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
             See all my projects
           </Link>
@@ -127,8 +127,8 @@ export default function Home() {
             href="/Resume_Fikri.pdf"
             target="_blank"
             className="absolute self-center text-xl mt-64 text-center no-underline hover:text-neutral-900
-              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-[3px]
-              before:h-[4px] before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
+              before:bg-yellow-canary before:content-[''] before:w-full before:absolute before:bottom-0.75
+              before:h-1 before:left-0 before:block before:transition-all before:-z-10 hover:before:h-[80%]"
           >
             My Resume
           </Link>
